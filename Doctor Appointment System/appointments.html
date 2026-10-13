@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Appointments - MediCare</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         NAVIGATION BAR
+    ========================================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🩺 MediCare
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="doctors.html">
+                Doctors
+            </a>
+
+            <a href="appointment.html">
+                Book Appointment
+            </a>
+
+            <a
+                href="appointments.html"
+                class="active"
+            >
+                My Appointments
+            </a>
+
+            <a href="admin.html">
+                Admin
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ========================================
+         APPOINTMENTS SECTION
+    ========================================= -->
+
+    <section class="my-appointments-section">
+
+
+        <div class="appointments-header">
+
+            <h1>
+                My Appointments
+            </h1>
+
+            <p>
+                View and manage your booked appointments
+            </p>
+
+        </div>
+
+
+
+        <!-- ====================================
+             APPOINTMENT SUMMARY
+        ===================================== -->
+
+        <div
+            id="appointmentSummary"
+            class="appointment-summary"
+        ></div>
+
+
+
+        <!-- ====================================
+             APPOINTMENT LIST
+        ===================================== -->
+
+        <div
+            id="appointmentList"
+            class="appointment-list"
+        ></div>
+
+
+
+        <!-- ====================================
+             NO APPOINTMENTS
+        ===================================== -->
+
+        <div
+            id="noAppointments"
+            class="no-appointments"
+            style="display: none;"
+        >
+
+            <div class="no-appointment-icon">
+                📅
+            </div>
+
+
+            <h2>
+                No Appointments Found
+            </h2>
+
+
+            <p>
+                You haven't booked any appointments yet.
+            </p>
+
+
+            <a
+                href="doctors.html"
+                class="book-now-link"
+            >
+                Find a Doctor
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+
+        <p>
+            © 2026 MediCare Doctor Appointment System
+        </p>
+
+        <p>
+            Front-End Web Development Project
+        </p>
+
+    </footer>
+
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="js/common.js"></script>
+
+    <script src="js/appointments.js"></script>
+
+
+</body>
+
+</html>

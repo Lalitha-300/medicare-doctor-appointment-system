@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Doctors - MediCare</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🩺 MediCare
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="doctors.html" class="active">Doctors</a>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="appointments.html">My Appointments</a>
+            <a href="admin.html">Admin</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Doctors Section -->
+    <section class="doctors-section">
+
+        <h1>Our Doctors</h1>
+
+        <p class="doctors-subtitle">
+            Find the right doctor for your healthcare needs
+        </p>
+
+
+        <!-- Search and Filter -->
+        <div class="doctor-search">
+
+            <input
+                type="text"
+                id="searchDoctor"
+                placeholder="🔍 Search doctor by name..."
+                onkeyup="searchDoctors()"
+            >
+
+            <select
+                id="specializationFilter"
+                onchange="filterDoctors()"
+            >
+
+                <option value="all">
+                    All Specializations
+                </option>
+
+                <option value="Cardiologist">
+                    Cardiologist
+                </option>
+
+                <option value="Dermatologist">
+                    Dermatologist
+                </option>
+
+                <option value="Neurologist">
+                    Neurologist
+                </option>
+
+                <option value="Pediatrician">
+                    Pediatrician
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Search Result Count -->
+        <p id="doctorCount" class="doctor-count"></p>
+
+
+        <!-- Doctor Cards -->
+        <div
+            id="doctorContainer"
+            class="doctor-container"
+        ></div>
+
+
+        <!-- No Doctors Message -->
+        <div
+            id="noDoctors"
+            class="no-doctors"
+            style="display: none;"
+        >
+
+            <div class="no-doctors-icon">
+                🔍
+            </div>
+
+            <h2>No Doctors Found</h2>
+
+            <p>
+                Please try another doctor name or specialization.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 MediCare Doctor Appointment System
+        </p>
+
+        <p>
+            Front-End Web Development Project
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/doctors.js"></script>
+
+</body>
+
+</html>
